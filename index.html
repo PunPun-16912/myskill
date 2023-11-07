@@ -16,6 +16,8 @@
 
     <title>MySkill</title>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
         window.addEventListener("DOMContentLoaded", function () {
             const autoTextbox = document.getElementById("auto-textbox");
@@ -37,37 +39,37 @@
     </script>
     <script>
         $(document).ready(function () {
-            // Your existing JavaScript code
+			// Your existing JavaScript code
 
-            // Function to slide the carousel
-            var currentSlide = 0;
-            var totalSlides = $(".carousel-image").length;
+			// Function to slide the carousel
+			var currentSlide = 0;
+			var totalSlides = $(".carousel-image").length;
 
-            function slideCarousel(direction) {
-                if (direction === 'next') {
-                    currentSlide = (currentSlide + 1) % totalSlides;
-                } else {
-                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-                }
-                var translateX = -currentSlide * 100; // เปลี่ยนเป็น 100% เนื่องจากเรามีรูป 5 รูป
-                $("#imageCarousel").css("transform", "translateX(" + translateX + "%)");
-            }
+			function slideCarousel(direction) {
+				if (direction === 'next') {
+					currentSlide = (currentSlide + 1) % totalSlides;
+				} else {
+					currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+				}
+				var translateX = -currentSlide * 50;
+				$(".carousel").css("transform", "translateX(" + translateX + "vw)");
+			}
 
-            $(".carousel-image").on("click", function () {
-                // Slide to the next image when an image is clicked
-                slideCarousel('next');
-            });
+			$(".carousel-image").on("click", function () {
+				// Slide to the next image when an image is clicked
+				slideCarousel('next');
+			});
 
-            $("#carousel-next").on("click", function () {
-                // Slide to the next image when the next button is clicked
-                slideCarousel('next');
-            });
+			$("#carousel-next").on("click", function () {
+				// Slide to the next image when the next button is clicked
+				slideCarousel('next');
+			});
 
-            $("#carousel-prev").on("click", function () {
-                // Slide to the previous image when the previous button is clicked
-                slideCarousel('prev');
-            });
-        });
+			$("#carousel-prev").on("click", function () {
+				// Slide to the previous image when the previous button is clicked
+				slideCarousel('prev');
+			});
+		});
     </script>
 
 </head>
@@ -77,7 +79,7 @@
         <ul class="nav nav-pills">
             <li class="nav-item"><a href="https://punpun.onrender.com/" class="nav-link"
                     style="color: #3a7ca5;">Home</a></li>
-            <li class="nav-item"><a href="https://myskill.onrender.com/" class="nav-link active"
+            <li class="nav-item"><a href="#" class="nav-link active"
                     style="border-radius: 25px; background-color: #3a7ca5;" aria-current="page">Skill</a></li>
             <li class="nav-item"><a href="https://www.youtube.com/@PUN_PUN-IPAD" class="nav-link"
                     style="color: #3a7ca5;">
@@ -90,43 +92,52 @@
         </ul>
     </header>
 
-    <nav>
-        <h1 class="header" id="profile-header" style="background-color: skyblue;"><i class="bi bi-lightbulb"></i> My
-            Skill <i class="bi bi-lightbulb"></i></h1>
-    </nav>
+    <div class="bgg media">
+        <nav>
+            <h1 class="header" id="profile-header" style="background-color: skyblue;"><i class="bi bi-lightbulb"></i> My
+                Skill <i class="bi bi-lightbulb"></i></h1>
+        </nav>
 
-    <div id="container">
-        <div id="left-side">
-            <div class="colr">
-                <center>
-                    <h2>Front end</h2>
-                    <p>- HTML </p>
-                    <p>- CSS </p>
-                    <p>- Bootstrap </p>
-                </center>
-                <center>
-                    <div class="textbox-container">
-                        <textarea id="auto-textbox" rows="4" cols="50"></textarea>
-                    </div>
-                    <script src="script.js"></script>
-                </center>
+        <div id="container">
+            <div id="left-side">
+                <div class="colr">
+                    <center>
+                        <h2>Front end</h2>
+                        <p>- HTML </p>
+                        <p>- CSS </p>
+                        <p>- Bootstrap </p>
+                    </center>
+                    <center>
+                        <div class="textbox-container">
+                            <textarea id="auto-textbox" rows="4" cols="50"></textarea>
+                        </div>
+                        <script src="script.js"></script>
+                    </center>
+                </div>
+            </div>
+            <div id="right-side">
+                <div class="colr2">
+                    <center>
+                        <h2 style="color: white;">Graphic</h2>
+                        <p style="color: white;">- Photoshop </p>
+                        <p style="color: white;">- Premirer Pro </p>
+                        <p style="color: white;">- Lightroom </p>
+                    </center>
+                </div>
+                <br>
+                <div class="colr">
+                    <center>
+                        <h2>Back End</h2>
+                        <p>- MySql</p>
+                    </center>
+                </div>
             </div>
         </div>
-        <div id="right-side">
-            <div class="colr2">
-                <center>
-                    <h2 style="color: white;">Graphic</h2>
-                    <p style="color: white;">- Photoshop </p>
-                    <p style="color: white;">- Premirer Pro </p>
-                    <p style="color: white;">- Lightroom </p>
-                </center>
-            </div>
-        </div>
+        <br>
+
+        <h1 class="header" style="background-color: #016064;"><i class="bi bi-camera"></i> My
+            Photos <i class="bi bi-camera"></i></h1>
     </div>
-    <br>
-
-    <h1 class="header" style="background-color: #016064;"><i class="bi bi-camera"></i> My
-        Photos <i class="bi bi-camera"></i></h1>
 
     <div class="media">
         <div class="carousel-container">
@@ -140,5 +151,4 @@
         </div>
     </div>
 </body>
-
 </html>
