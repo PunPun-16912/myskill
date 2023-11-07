@@ -43,13 +43,13 @@ body {
 }
 
 .colr {
-    background-image: url(mblue2.jpg);
-    background-size: 100vh;
+    background-image: url(giphy.gif);
+    background-size: 50vh;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5vw;
     margin: 0 2vw;
-    color: #003459;
+    color: white;
 }
 
 .colr2 {
@@ -58,6 +58,16 @@ body {
     border: 1px solid #ccc;
     border-radius: 5vw;
     margin: 0 2vw;
+}
+
+.colr3{
+    background-image: url(giphy2.gif);
+    background-size: 50vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5vw;
+    margin: 0 2vw;
+    color: white;
 }
 
 
