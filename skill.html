@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="custompage.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@600&display=swap" rel="stylesheet">
+
+    <title>MySkill</title>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            const autoTextbox = document.getElementById("auto-textbox");
+            const predefinedText = "hello world สวัสดีโลกมนุษย์อันแสนวุ่นวายและน่าเบื่อหน่าย";
+            let currentIndex = 0;
+
+            autoTextbox.value = predefinedText.charAt(currentIndex);
+
+            const intervalId = setInterval(function () {
+                currentIndex++;
+                if (currentIndex < predefinedText.length) {
+                    autoTextbox.value += predefinedText.charAt(currentIndex);
+                }
+                else {
+                    clearInterval(intervalId);
+                }
+            }, 200); // Adjust the interval time (in milliseconds) as per your preference
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Your existing JavaScript code
+
+            // Function to slide the carousel
+            var currentSlide = 0;
+            var totalSlides = $(".carousel-image").length;
+
+            function slideCarousel(direction) {
+                if (direction === 'next') {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                } else {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                }
+                var translateX = -currentSlide * 100; // เปลี่ยนเป็น 100% เนื่องจากเรามีรูป 5 รูป
+                $("#imageCarousel").css("transform", "translateX(" + translateX + "%)");
+            }
+
+            $(".carousel-image").on("click", function () {
+                // Slide to the next image when an image is clicked
+                slideCarousel('next');
+            });
+
+            $("#carousel-next").on("click", function () {
+                // Slide to the next image when the next button is clicked
+                slideCarousel('next');
+            });
+
+            $("#carousel-prev").on("click", function () {
+                // Slide to the previous image when the previous button is clicked
+                slideCarousel('prev');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="https://punpun.onrender.com/" class="nav-link"
+                    style="color: #3a7ca5;">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active"
+                    style="border-radius: 25px; background-color: #3a7ca5;" aria-current="page">Skill</a></li>
+            <li class="nav-item"><a href="https://www.youtube.com/@PUN_PUN-IPAD" class="nav-link"
+                    style="color: #3a7ca5;">
+                    <h4><i class="bi bi-youtube"></i></h4>
+                </a></li>
+            <li class="nav-item"><a href="https://www.facebook.com/profile.php?id=100009716478063" class="nav-link"
+                    style="color: #3a7ca5;">
+                    <h4><i class="bi bi-facebook"></i></h4>
+                </a></li>
+        </ul>
+    </header>
+
+    <nav>
+        <h1 class="header" id="profile-header" style="background-color: skyblue;"><i class="bi bi-lightbulb"></i> My
+            Skill <i class="bi bi-lightbulb"></i></h1>
+    </nav>
+
+    <div id="container">
+        <div id="left-side">
+            <div class="colr">
+                <center>
+                    <h2>Front end</h2>
+                    <p>- HTML </p>
+                    <p>- CSS </p>
+                    <p>- Bootstrap </p>
+                </center>
+                <center>
+                    <div class="textbox-container">
+                        <textarea id="auto-textbox" rows="4" cols="50"></textarea>
+                    </div>
+                    <script src="script.js"></script>
+                </center>
+            </div>
+        </div>
+        <div id="right-side">
+            <div class="colr2">
+                <center>
+                    <h2 style="color: white;">Graphic</h2>
+                    <p style="color: white;">- Photoshop </p>
+                    <p style="color: white;">- Premirer Pro </p>
+                    <p style="color: white;">- Lightroom </p>
+                </center>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <h1 class="header" style="background-color: #016064;"><i class="bi bi-camera"></i> My
+        Photos <i class="bi bi-camera"></i></h1>
+
+    <div class="media">
+        <div class="carousel-container">
+            <div class="carousel" id="imageCarousel">
+                <img src="1106.jpg" class="carousel-image responsive-image">
+                <img src="3182.jpg" class="carousel-image responsive-image">
+                <img src="01.jpg" class="carousel-image responsive-image">
+                <img src="02.jpg" class="carousel-image responsive-image">
+                <img src="03.jpg" class="carousel-image responsive-image">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

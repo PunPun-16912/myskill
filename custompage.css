@@ -1,0 +1,155 @@
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.bgg {
+    background: url(1102.PNG);
+    background-size: 25vw;
+    animation: backgroundMove 20s linear infinite;
+}
+
+.bgg2 {
+    background: url(4532.PNG);
+    background-size: 25vw;
+    animation: backgroundMove 20s linear infinite;
+}
+
+
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+.header {
+    background-color: blue;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 2vw;
+    border: 1px solid #ccc;
+    border-radius: 5vw;
+}
+
+.cen {
+    padding: 2vw;
+    text-align: center;
+    font-size: 15px;
+}
+
+.colr {
+    background-image: url(mblue2.jpg);
+    background-size: 100vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5vw;
+    margin: 0 2vw;
+    color: #003459;
+}
+
+.colr2 {
+    background-color: #91BEB7;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5vw;
+    margin: 0 2vw;
+}
+
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #219f9c;
+    }
+
+    25% {
+        background-color: #336296;
+    }
+
+    50% {
+        background-color: #8acbde;
+    }
+
+    75% {
+        background-color: #b5dfcf
+    }
+
+    100% {
+        background-color: #219f9c;
+    }
+}
+
+#profile-header {
+    animation: changeColor 10s infinite;
+}
+
+.responsive-video {
+    width: 50%;
+    max-height: 40%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+/* Your existing styles */
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1.0s ease-in-out;
+}
+
+.carousel-image {
+    flex: 0 0 auto;
+    width: 50vw;
+    cursor: pointer;
+    padding: 1%;
+    /* Add some margin to create space between images */
+}
+
+#container {
+    display: flex; /* ใช้ Flexbox เพื่อแสดงซ้ายและขวาในแนวนอน */
+}
+
+#left-side {
+    width: 49%; /* กำหนดความกว้างของส่วนซ้าย */
+    padding: 5px; /* กำหนดระยะห่างของเนื้อหาซ้าย */
+}
+
+#right-side {
+    width: 49%; /* กำหนดความกว้างของส่วนขวา */
+    padding: 5px; /* กำหนดระยะห่างของเนื้อหาขวา */
+}
+
+.textbox-container {
+    text-align: center; /* จัดให้ข้อความแสดงตรงกลางในแนวนอน */
+    display: flex;
+    align-items: center; /* จัดให้ข้อความแสดงตรงกลางในแนวตั้ง */
+    justify-content: center; /* จัดให้ข้อความแสดงตรงกลางในแนวนอน */
+}
+
+textarea {
+    width: 80%;
+    height: 15%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5vw;
+    color: white;
+    background-color: #003459;
+    overflow: hidden;
+    text-align: center; /* จัดให้ข้อความแสดงตรงกลางใน textarea */
+    opacity: 0.6;
+}
