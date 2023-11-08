@@ -40,37 +40,37 @@
     </script>
     <script>
         $(document).ready(function () {
-			// Your existing JavaScript code
+            // Your existing JavaScript code
 
-			// Function to slide the carousel
-			var currentSlide = 0;
-			var totalSlides = $(".carousel-image").length;
+            // Function to slide the carousel
+            var currentSlide = 0;
+            var totalSlides = $(".carousel-image").length;
 
-			function slideCarousel(direction) {
-				if (direction === 'next') {
-					currentSlide = (currentSlide + 1) % totalSlides;
-				} else {
-					currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-				}
-				var translateX = -currentSlide * 50;
-				$(".carousel").css("transform", "translateX(" + translateX + "vw)");
-			}
+            function slideCarousel(direction) {
+                if (direction === 'next') {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                } else {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                }
+                var translateX = -currentSlide * 50;
+                $(".carousel").css("transform", "translateX(" + translateX + "vw)");
+            }
 
-			$(".carousel-image").on("click", function () {
-				// Slide to the next image when an image is clicked
-				slideCarousel('next');
-			});
+            $(".carousel-image").on("click", function () {
+                // Slide to the next image when an image is clicked
+                slideCarousel('next');
+            });
 
-			$("#carousel-next").on("click", function () {
-				// Slide to the next image when the next button is clicked
-				slideCarousel('next');
-			});
+            $("#carousel-next").on("click", function () {
+                // Slide to the next image when the next button is clicked
+                slideCarousel('next');
+            });
 
-			$("#carousel-prev").on("click", function () {
-				// Slide to the previous image when the previous button is clicked
-				slideCarousel('prev');
-			});
-		});
+            $("#carousel-prev").on("click", function () {
+                // Slide to the previous image when the previous button is clicked
+                slideCarousel('prev');
+            });
+        });
     </script>
 
 </head>
@@ -92,7 +92,6 @@
                 </a></li>
         </ul>
     </header>
-
     <div class="bgg media">
         <nav>
             <h1 class="header" id="profile-header" style="background-color: skyblue;"><i class="bi bi-lightbulb"></i> My
@@ -149,7 +148,17 @@
                 <img src="02.jpg" class="carousel-image responsive-image">
                 <img src="03.jpg" class="carousel-image responsive-image">
             </div>
-        </div>
+        </div> 
     </div>
+    <hr>
+    <footer>
+        <center>
+            <div class="d-flex justify-content-center">
+            <h1 class="mx-2"><i class="bi bi-github"></i></h1>
+            <h1 class="mx-2"><i class="bi bi-bootstrap-fill"></i><h1>
+            </div>
+                </center>
+    </footer>
 </body>
+
 </html>
