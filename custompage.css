@@ -44,7 +44,7 @@ body {
 
 .colr {
     background-image: url(giphy.gif);
-    background-size: 50vh;
+    background-size: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5vw;
@@ -62,12 +62,18 @@ body {
 
 .colr3{
     background-image: url(giphy2.gif);
-    background-size: 50vh;
+    background-size: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5vw;
     margin: 0 2vw;
     color: white;
+}
+
+.colr4
+{
+    border-radius: 25px;
+    background-color: aquamarine;
 }
 
 
@@ -135,12 +141,12 @@ body {
 }
 
 #left-side {
-    width: 49%; /* กำหนดความกว้างของส่วนซ้าย */
+    width: 50%; /* กำหนดความกว้างของส่วนซ้าย */
     padding: 5px; /* กำหนดระยะห่างของเนื้อหาซ้าย */
 }
 
 #right-side {
-    width: 49%; /* กำหนดความกว้างของส่วนขวา */
+    width: 50%; /* กำหนดความกว้างของส่วนขวา */
     padding: 5px; /* กำหนดระยะห่างของเนื้อหาขวา */
 }
 
