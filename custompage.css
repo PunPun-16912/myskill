@@ -14,7 +14,11 @@ body {
     animation: backgroundMove 20s linear infinite;
 }
 
-
+.bggt
+{
+    background: url(giphy.gif);
+    background-size: 100%;
+}
 
 @keyframes backgroundMove {
     0% {
@@ -32,8 +36,6 @@ body {
     font-size: 35px;
     color: white;
     padding: 2vw;
-    border: 1px solid #ccc;
-    border-radius: 5vw;
 }
 
 .cen {
@@ -43,31 +45,37 @@ body {
 }
 
 .colr {
-    background-image: url(giphy.gif);
+    background-color: #336296;
     background-size: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5vw;
     margin: 0 2vw;
     color: white;
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px #020075;
+    text-shadow: 2px 2px 3px #777777;
 }
 
 .colr2 {
-    background-color: #91BEB7;
+    background-color: #002366;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5vw;
     margin: 0 2vw;
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px #020075;
+    text-shadow: 2px 2px 3px #777777;
 }
 
 .colr3{
-    background-image: url(giphy2.gif);
+    background-color: #003459;
     background-size: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5vw;
     margin: 0 2vw;
     color: white;
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px #020075;
+    text-shadow: 2px 2px 3px #777777;
 }
 
 .colr4
@@ -168,4 +176,6 @@ textarea {
     overflow: hidden;
     text-align: center; /* จัดให้ข้อความแสดงตรงกลางใน textarea */
     opacity: 0.6;
+    box-shadow: 5px 5px 10px #2320ff;
+    text-shadow: 2px 2px 3px #666666;
 }
