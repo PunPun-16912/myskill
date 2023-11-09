@@ -36,6 +36,14 @@ body {
     font-size: 35px;
     color: white;
     padding: 2vw;
+    box-shadow: 3px 3px 5px #1d2127;
+}
+.header2 {
+    background-color: blue;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 2vw;
 }
 
 .cen {
@@ -45,32 +53,32 @@ body {
 }
 
 .colr {
-    background-color: #3a7ca5;
+    background-color: #1d2127;
     background-size: 100%;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 3vw;
     margin: 0 2vw;
     color: white;
-    opacity: 0.7;
-    box-shadow: 5px 5px 10px black;
-    text-shadow: 2px 2px 3px #777777;
-}
-
-.colr2 {
-    background-color: #002366;
-    padding: 10px;
-    border-radius: 25px;
-    margin: 0 2vw;
     opacity: 0.8;
     box-shadow: 5px 5px 10px black;
     text-shadow: 2px 2px 3px #777777;
 }
 
+.colr2 {
+    background-color: #252930;
+    padding: 10px;
+    border-radius: 3vw;
+    margin: 0 2vw;
+    opacity: 0.6;
+    box-shadow: 5px 5px 10px black;
+    text-shadow: 2px 2px 3px #777777;
+}
+
 .colr3{
-    background-color: #003459;
+    background-color: #252930;
     background-size: 100%;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 3vw;
     margin: 0 2vw;
     color: white;
     opacity: 0.7;
@@ -172,10 +180,10 @@ textarea {
     padding: 10px;
     border-radius: 5vw;
     color: white;
-    background-color: #003459;
+    background-color: #252930;
     overflow: hidden;
     text-align: center; /* จัดให้ข้อความแสดงตรงกลางใน textarea */
     opacity: 0.6;
-    box-shadow: 5px 5px 10px #2320ff;
+    box-shadow: 5px 5px 10px black;
     text-shadow: 2px 2px 3px #666666;
 }
