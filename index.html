@@ -32,8 +32,8 @@
                     autoTextbox.value += predefinedText.charAt(currentIndex);
                 }
                 else {
-                    clearInterval(intervalId);
-
+                    currentIndex = 0;
+                    autoTextbox.value = predefinedText.charAt(currentIndex);
                 }
             }, 200); // Adjust the interval time (in milliseconds) as per your preference
         });
@@ -92,75 +92,75 @@
                     </a></li>
             </ul>
         </header>
-    <div class="bggt media">
-        <nav>
-            <h1 class="header" id="profile-header" style="background-color: skyblue;"><i class="bi bi-lightbulb"></i> My
-                Skill <i class="bi bi-lightbulb"></i></h1>
-        </nav>
+        <div class="bggt media">
+            <nav>
+                <h1 class="header" id="profile-header" style="background-color: skyblue;"><i
+                        class="bi bi-lightbulb"></i> My
+                    Skill <i class="bi bi-lightbulb"></i></h1>
+            </nav>
 
-        <div id="container">
-            <div id="left-side">
-                <div class="colr">
-                    <center>
-                        <h2>Front End</h2>
-                        <p>- HTML </p>
-                        <p>- CSS </p>
-                        <p>- Bootstrap </p>
-                    </center>
-                    <center>
-                        <div class="textbox-container">
-                            <textarea id="auto-textbox" rows="4" cols="50"></textarea>
-                        </div>
-                        <script src="script.js"></script>
-                    </center>
+            <div id="container">
+                <div id="left-side">
+                    <div class="colr">
+                        <center>
+                            <h2>Front End</h2>
+                            <p>- HTML </p>
+                            <p>- CSS </p>
+                            <p>- Bootstrap </p>
+                        </center>
+                        <center>
+                            <div class="textbox-container">
+                                <textarea id="auto-textbox" rows="4" cols="50"></textarea>
+                            </div>
+                            <script src="script.js"></script>
+                        </center>
+                    </div>
+                </div>
+                <div id="right-side">
+                    <div class="colr2">
+                        <center>
+                            <h2 style="color: white;">Graphic</h2>
+                            <p style="color: white;">- Photoshop </p>
+                            <p style="color: white;">- Premirer Pro </p>
+                            <p style="color: white;">- Lightroom </p>
+                        </center>
+                    </div>
+                    <br>
+                    <div class="colr3">
+                        <center>
+                            <h2>Database</h2>
+                            <p>- MySql</p>
+                            <p>- Oracle</p>
+                        </center>
+                    </div>
                 </div>
             </div>
-            <div id="right-side">
-                <div class="colr2">
-                    <center>
-                        <h2 style="color: white;">Graphic</h2>
-                        <p style="color: white;">- Photoshop </p>
-                        <p style="color: white;">- Premirer Pro </p>
-                        <p style="color: white;">- Lightroom </p>
-                    </center>
-                </div>
-                <br>
-                <div class="colr3">
-                    <center>
-                        <h2>Database</h2>
-                        <p>- MySql</p>
-                        <p>- Oracle</p>
-                    </center>
+            <br>
+
+            <h1 class="header2" style="background-color: #016064;"><i class="bi bi-camera"></i> My
+                Photos <i class="bi bi-camera"></i></h1>
+        </div>
+
+        <div class="media" style="background-color: #333333;">
+            <div class="carousel-container">
+                <div class="carousel" id="imageCarousel">
+                    <img src="1106.jpg" class="carousel-image responsive-image">
+                    <img src="3182.jpg" class="carousel-image responsive-image">
+                    <img src="01.jpg" class="carousel-image responsive-image">
+                    <img src="02.jpg" class="carousel-image responsive-image">
+                    <img src="03.jpg" class="carousel-image responsive-image">
                 </div>
             </div>
         </div>
-        <br>
-
-        <h1 class="header2" style="background-color: #016064;"><i class="bi bi-camera"></i> My
-            Photos <i class="bi bi-camera"></i></h1>
-    </div>
-
-    <div class="media" style="background-color: #333333;">
-        <div class="carousel-container">
-            <div class="carousel" id="imageCarousel">
-                <img src="1106.jpg" class="carousel-image responsive-image">
-                <img src="3182.jpg" class="carousel-image responsive-image">
-                <img src="01.jpg" class="carousel-image responsive-image">
-                <img src="02.jpg" class="carousel-image responsive-image">
-                <img src="03.jpg" class="carousel-image responsive-image">
-            </div>
-        </div>
-    </div>
-    <hr>
-    <footer>
-        <center>
-            <div class="d-flex justify-content-center">
-                <h1 class="mx-2"><i class="bi bi-github"></i></h1>
-                <h1 class="mx-2"><i class="bi bi-bootstrap-fill"></i>
-                    <h1>
-            </div>
-        </center>
-    </footer>
+        <hr>
+        <footer>
+            <center>
+                <div class="d-flex justify-content-center">
+                    <h1 class="mx-2"><i class="bi bi-github" style="color: black;"></i></h1>
+                    <h1 class="mx-2"><i class="bi bi-bootstrap-fill" style="color: black;"></i>
+                </div>
+            </center>
+        </footer>
 </body>
 
 </html>
